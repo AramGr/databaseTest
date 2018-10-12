@@ -89,7 +89,7 @@ class CatalogController extends Controller
     public function categoryShow($name)
     {
         $products = DB::table('cproducts')
-                        ->select('*')
+                        ->select('cproducts.id', 'cproducts.title', 'image', 'price')
                         ->leftJoin('categories', 'categories.product_id', '=', 'cproducts.id')
                         ->where('alias', $name)
                         ->get();
