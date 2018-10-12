@@ -11,17 +11,23 @@
 
 <h4>Installation</h4>
 
- - git clone https://github.com/AramGr/databaseTest.git
+ ```
+ git clone https://github.com/AramGr/databaseTest.git
+ ```
+ ```
  - composer install
+ ```
  
  - create .env file and setup the database
-
- - php artisan migrate
  
+create database tables with relations
+ ```
+ - php artisan migrate
+ ```
  ##
  <h4>Cron Job requirements</h4>
  
- use the scheduler by add the following Cron entry to your server
+ use the scheduler by adding the following Cron entry to your server
  
  - cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
 
