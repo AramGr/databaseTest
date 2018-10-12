@@ -13,7 +13,7 @@
                             <span class="price">{{ $product->price }}</span>
                             <h5>Categories</h5>
                             @foreach($product->categories as $category)
-                                <h6><a href="{{ url('/catalog/category/'.$category->alias) }}">{{ url('/catalog/category/'.$category->alias) }}</a></h6>
+                                <h6><a href="{{ url('/catalog/category/'.$category->alias) }}">{{$category->title }}</a></h6>
                             @endforeach
                         </div>
                     </div>
