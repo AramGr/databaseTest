@@ -7,6 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## DatabaseTest
+
+<h4>Installation</h4>
+
+ - git clone https://github.com/AramGr/databaseTest.git
+ - composer install
+ 
+ - create .env file and setup the database
+
+ - php artisan migrate
+ 
+ ##
+ <h4>Cron Job requirements</h4>
+ 
+ use the scheduler by add the following Cron entry to your server
+ 
+ - cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
